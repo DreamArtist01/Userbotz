@@ -1,0 +1,52 @@
+{
+    "name": "Userbot",
+    "description": "join telegram @premiumbotz for more source codes",
+    "env": {
+        "SESSION_STRING": {
+            "description": "Your pyrogram V2 session string",
+            "required": true
+        },
+        "API_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "required": true
+        },
+        "target_groups": {
+            "description": "username of target groups separated by space.",
+            "required": true 
+        },
+        "MESSAGE1": {
+            "description": "1st random message",
+            "required": true
+        },
+        "MESSAGE2": {
+            "description": "2nd random message.",
+            "required": true 
+        },
+        "MESSAGE3": {
+            "description": "3rd random message",
+            "required": true
+        },
+        "MESSAGE4": {
+            "description": "4th random message",
+            "required": true
+        },
+        "MESSAGE5": {
+            "description": "5th random message",
+            "required": true
+        },
+    },
+    "addons": [],
+    "buildpacks": [{
+        "url": "heroku/python"
+    }],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "hobby"
+        }
+    }
+}
